@@ -18,6 +18,13 @@
           --font-sora: Sora, serif;
           --font-adlam: ADLaM Display, serif;
         }
+        .categorie-cards {
+            @apply bg-[#F9DF8A] py-14 text-center content-center rounded-xl
+        }
+        .categorie-cards-img {
+            @apply bg-white w-20 h-20   content-center justify-items-center rounded-full mx-auto
+        }
+
       </style>
 </head>
 
@@ -28,7 +35,8 @@
             <div class="flex justify-between items-center mx-auto 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl px-6 :px-0">
                 <div class="flex items-center lg:gap-3 md:gap-2">
                     <img src="./c1-assets/logo-header.png" alt="logo">
-                    <h2 class="text-2xl  font-normal hidden md:block">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
+                    <h2 class="text-2xl  font-normal hidden md:block">Browse<span class="text-[#FFDC26]">4</span>Pets
+                    </h2>
                 </div>
                 <div class="lg:gap-8 hidden lg:flex">
                     <a class="lg:text-xl md:text-lg" href="">Find a pet</a>
@@ -42,32 +50,88 @@
                     <div class="md:block hidden">
                         <img src="./c1-assets/Vector.png" alt="">
                     </div>
-                    <button class="text-xl border-[#FFDC26] border rounded-lg px-7 py-3 bg-white lg:block hidden">Login</button>
+                    <button
+                        class="text-xl border-[#FFDC26] border rounded-lg px-7 py-3 bg-white lg:block hidden">Login</button>
                     <button class="text-xl rounded-lg px-7 py-3 bg-[#FFDC26] lg:block hidden ">Register</button>
                     <div class="lg:hidden">
                         <img src="./c1-assets/bars-3.png" alt="">
                     </div>
-    
+
                 </div>
-                
+
             </div>
         </nav>
 
         <!-- hero-section-start -->
-       
+
     </header>
-    <section class="relative min-h-[26rem] sm:min-h-[30rem] md:min-h-[40rem]  mx-auto 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl xl:mt-20 mt-8 px-6" >
+    <section class="relative min-h-[26rem] sm:min-h-[30rem] md:min-h-[40rem]  mx-auto 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl xl:mt-20 mt-8 px-6">
         <div class="z-50 relative">
-            <h1 class="font-adlam xl:text-[3.5rem] md:text-5xl  sm:text-4xl text-3xl leading-tight">Pamper Your Pet, <br> Because They Deserve <br> the Best</h1>
-            <p class="text-base md:text-xl text-black/70 my-5 lg:max-w-[70%]">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+            <h1 class="font-adlam xl:text-[3.5rem] md:text-5xl  sm:text-4xl text-3xl leading-tight">Pamper Your Pet,
+                <br> Because They Deserve <br> the Best
+            </h1>
+            <p class="text-base md:text-xl text-black/70 my-5 lg:max-w-[70%]">Discover a world of treats, toys, and
+                essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
             <button class="bg-[#FFDC26] rounded-lg py-2 px-4 text-base md:text-xl">Find a pet</button>
-            
+
         </div>
         <div class="absolute bottom-0">
             <img class="w-full h-full" src="./c1-assets/cat-big.png" alt="">
         </div>
     </section>
-    
+
+    <!-- category-section-start -->
+
+    <section>
+        <div class="mx-auto 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl px-6 mt-14 lg:mt-36">
+            <h2 class="font-adlam text-2xl md:text-4xl">Browse By Categories</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 xl:gap-3 mt-8 lg:mt-12">
+                <div class="categorie-cards">
+                    <div class="categorie-cards-img">
+                        <img src="./c1-assets/dog-cartoon.png" alt="">
+                    </div>
+                    <h3 class="font-adlam text-base md:text-xl">Dog</h3>
+                    <p class="text-xs md:text-base">3 items</p>
+                </div>
+                <div class="categorie-cards">
+                    <div class="categorie-cards-img">
+                        <img src="./c1-assets/fish-cartoon.png" alt="">
+                    </div>
+                    <h3 class="font-adlam text-base md:text-xl">Fish</h3>
+                    <p class="text-xs md:text-base">3 items</p>
+                </div>
+                <div class="categorie-cards">
+                    <div class="categorie-cards-img">
+                        <img src="./c1-assets/cat-cartoon.png" alt="">
+                    </div>
+                    <h3 class="font-adlam text-base md:text-xl">Cat</h3>
+                    <p class="text-xs md:text-base">3 items</p>
+                </div>
+                <div class="categorie-cards">
+                    <div class="categorie-cards-img">
+                        <img src="./c1-assets/bird-cartoon.png" alt="">
+                    </div>
+                    <h3 class="font-adlam text-base md:text-xl">Birds</h3>
+                    <p class="text-xs md:text-base">3 items</p>
+                </div>
+                <div class="categorie-cards">
+                    <div class="categorie-cards-img">
+                        <img src="./c1-assets/mouse-cartoon.png" alt="">
+                    </div>
+                    <h3 class="font-adlam text-base md:text-xl">Small pet</h3>
+                    <p class="text-xs md:text-base">3 items</p>
+                </div>
+                <div class="categorie-cards">
+                    <div class="categorie-cards-img">
+                        <img src="./c1-assets/rabbit-cartoon.png" alt="">
+                    </div>
+                    <h3 class="font-adlam text-base md:text-xl">Rabit</h3>
+                    <p class="text-xs md:text-base">2 items</p>
+                </div>
+
+            </div>
+    </section>
+
 
 </body>
 

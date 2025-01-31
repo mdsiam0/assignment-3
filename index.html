@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse4Pets</title>
     <link rel="shortcut icon" href="./c1-assets/logo-header.png" type="image/x-icon">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
+          --font-sora: Sora, serif;
+          --font-adlam: ADLaM Display, serif;
+        }
+      </style>
 </head>
-<body>
+
+<body class="font-sora">
+    <header>
+        <nav class="bg-[#FFF9F4] py-4 max-[600px]:border-b">
+            <div class="flex  justify-between items-center mx-auto 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl max-w-[95%]">
+                <div class="flex items-center lg:gap-3 md:gap-2">
+                    <img src="./c1-assets/logo-header.png" alt="logo">
+                    <h2 class="text-2xl  font-normal hidden md:block">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
+                </div>
+                <div class="lg:gap-8 hidden lg:flex">
+                    <a class="lg:text-xl md:text-lg" href="">Find a pet</a>
+                    <a class="lg:text-xl md:text-lg" href="">Breeds</a>
+                    <a class="lg:text-xl md:text-lg" href="">Contact us</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="lg:block hidden">
+                        <img src="./c1-assets/bell.png" alt="">
+                    </div>
+                    <div class="md:block hidden">
+                        <img src="./c1-assets/Vector.png" alt="">
+                    </div>
+                    <button class="text-xl border-[#FFDC26] border rounded-lg px-7 py-3 bg-white lg:block hidden">Login</button>
+                    <button class="text-xl rounded-lg px-7 py-3 bg-[#FFDC26] lg:block hidden ">Register</button>
+                    <div class="lg:hidden">
+                        <img src="./c1-assets/bars-3.png" alt="">
+                    </div>
     
+                </div>
+                
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>

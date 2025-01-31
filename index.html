@@ -23,8 +23,9 @@
 
 <body class="font-sora">
     <header>
-        <nav class="bg-[#FFF9F4] py-4 max-[600px]:border-b">
-            <div class="flex  justify-between items-center mx-auto 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl max-w-[95%]">
+        <!-- nav-section-start -->
+        <nav class="bg-[#FFF9F4] relative z-[1200] py-4 border-b border-black/60 md:border-none ">
+            <div class="flex justify-between items-center mx-auto 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl px-6 :px-0">
                 <div class="flex items-center lg:gap-3 md:gap-2">
                     <img src="./c1-assets/logo-header.png" alt="logo">
                     <h2 class="text-2xl  font-normal hidden md:block">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
@@ -51,7 +52,23 @@
                 
             </div>
         </nav>
+
+        <!-- hero-section-start -->
+       
     </header>
+    <section class="relative min-h-[26rem] sm:min-h-[30rem] md:min-h-[40rem]  mx-auto 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl xl:mt-20 mt-8 px-6" >
+        <div class="z-50 relative">
+            <h1 class="font-adlam xl:text-[3.5rem] md:text-5xl  sm:text-4xl text-3xl leading-tight">Pamper Your Pet, <br> Because They Deserve <br> the Best</h1>
+            <p class="text-base md:text-xl text-black/70 my-5 lg:max-w-[70%]">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="bg-[#FFDC26] rounded-lg py-2 px-4 text-base md:text-xl">Find a pet</button>
+            
+        </div>
+        <div class="absolute bottom-0">
+            <img class="w-full h-full" src="./c1-assets/cat-big.png" alt="">
+        </div>
+    </section>
+    
+
 </body>
 
 </html>
